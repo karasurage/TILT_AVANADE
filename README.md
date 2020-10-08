@@ -86,14 +86,33 @@
 
 **Definição de Papéis:** 
 
-  - Nicholas Mateus: DEV / TEAM
-  - Randerson Thallys: DEV / TEAM / SCRUM MASTER
-  - Tarcísio Dantas: DEV / TEAM
+  **- Gama Academy (Stackholders):** PRODUCT OWNER
+  **- Nicholas Mateus:** DEVELOPER TEAM
+  **- Randerson Thallys:** DEVELOPER TEAM / SCRUM MASTER
+  **- Tarcísio Dantas:** DEVELOPER TEAM
   
 **Definição de Artefatos:** 
 
-  - 
+  **1. Sprint Planning Meeting:** 
+       
+       1. Utilizar o Planning Poker para implementar o gráfico de Burndown;
+       2. Sprints com duração entre 8 a 9 dias;
+       3. Grooming da Sprint.
+       
+  **2. Daily Scrum:** 
   
+        1. Reuniões diárias de até 15 minutos;
+        2. Acompanhar gráfico de Burndown através dos story points para analisar o andamento do projeto;
+        
+  **3. Sprint Review Meeting:**
   
+        1. Duração da reunião até 30 minutos
+        2. Grooming do Produto.
+        
+  **4. Sprint Retrospective:**
 
-
+        1. Duração da reunião até 15 minutos
+        2. O que foi bom?
+        3. O que melhorar?
+        4. Como melhorar?
+        
