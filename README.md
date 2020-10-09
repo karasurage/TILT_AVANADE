@@ -1,118 +1,112 @@
-# **PROJETO TILT**
+# TV+
+> Sistema de controle de habilidades e salários de uma emissora de TV.
 
-**1. Sobre:** 
-<p align="jutify"><em>Projeto para o curso da Academia de Formação de Desenvolvimento de Sistemas MICROSOFT NET C# oferecido pela <a href="https://www.avanade.com/pt-br" target="_blank" alt="Site Avanade">Avanade</a> e <a href="https://gama.academy/" target="_blank" alt="Site Avanade">Gama Academy</a>.</em></p>
+### Sobre
 
-<hr/>
-    
-**2. Desafio Proposto:** 
+    - Projeto para o curso da Academia de Formação de Desenvolvimento de Sistemas MICROSOFT NET C# oferecido pela <a href="https://www.avanade.com/pt-br" target="_blank" alt="Site Avanade">Avanade</a> e <a href="https://gama.academy/" target="_blank" alt="Site Avanade">Gama Academy</a>.
 
-**Desafio Final - Entrega 1/2**
-
-<p align="jutify"><b>O que é:</b> Hora de aplicar os aprendizados absorvidos durante o seu treinamento em um desafio real. O trabalho será entregue para uma banca técnica,   formada por profissionais de tecnologia da Avanade, que avaliarão o código desenvolvido. O desafio tem o objetivo de avaliar suas competências técnicas e comportamentais para que você seja alocada/o nos projetos que tenha mais fit com o seu perfil.</p>
-
-<p align="jutify"><b>Como vai funcionar:</b> O desafio é feito em duplas ou trios, aqueles que vocês devem formar no no assignment "Monte seu Grupo". Apenas uma pessoa da dupla/trio precisa realizar a entrega pelo grupo aqui.</p>
-
-<p align="jutify"><b>Entrega:</b> Cada dupla/trio deverá compartilhar semanalmente (isso é, uma entrega parcial e outra final) o link do projeto no GitHub com Read.me do e todos os commits de código feitos pelo perfil de cada pessoa da dupla/trio. As entregas são até o sábado de cada semana de treinamento, até às 23h59. Ou seja, vocês tem que realizar essa primeira entrega no final da primeira semana de treinamento e semana que vem terá outro assignment pra vocês submeterem o desafio pronto.</p>
-
-<p align="jutify"><b>Escopo do projeto:</b> Vocês deverão desenvolver um sistema de controle de habilidades e salários de uma emissora de TV, ou seja, de seu corpo artístico.</p>
-
-<p align="jutify"><b>Requisitos não-funcionais:</b></p>
+### Descrição do Projeto
   
-  <ul>
-    <li>Performance</li>
-    <li>Alta Disponibilidade</li>
-    <li>Testes Automatizados</li>
-    <li>Segurança (proteger chamadas diretas a API sem ser via front-end)</li>
-    <li>Logs/Rastreabilidade</li>
-    <li>Tratamento de Exceção</li>
-    <li>Responsividade (renderizar bem no desktop/note, tablet e celular)</li>
-    <li>Controle de concorrência na persistência dos objetos</li>
-  </ul>
+    - Deverá realizar o desenvolvilmento de um sistema, voltado ao controle de habilidades e salários de uma Emissora de TV, visando o seu corpo artístico.
 
-<p align="jutify"><b>Principais funcionalidades (entregas obrigatórias):</b></p>
+### Principais Funcionalidades (Entregas Obrigatórias)
+
+    - Logar no sistema TV+, se for a primeira vez efetuar o cadastro
+    - Efetuar uma reserva de um artista disponível
+
+### Características
+
+    - Consultar artistas disponíveis para efetuar possíveis reservas para obras dos produtores
+    - Realizar consultas artistas já reservadas ou pagas
+
+### Tecnologia
+
+    * [Visual Studio] - IDE utilizada para desenvolvimento da aplicação!
+    <!-- * [IdHTTP] - Componente utilizado para efetuar o GET do arquivo a ser baixado -->
+    <!-- * [idAntiFreeze] - Não permite o congelamento da tela -->
+    <!-- * [SaveDialog] - Permite a escolha do caminho a ser salvo o arquivo -->
+    <!-- * [idSSLIOHandlerSocketOpenSSL] - Utilizado na escolha da(s) versão(ões) do SSL -->
+    <!-- * [FDConnectio] - Utilizado para conectar com o banco de dados "SQLite" -->
+    <!-- * [FDQuery] - Utilizado para realização das consultas e inserções na tabela de log -->
+
+#### Modelo de Commits
   
-  <ul>
-    <li>Cadastro de novo perfil de usuário (ator/atriz);</li>  
-    <li>Login e logout admin (produtor) e de usuário (ator/atriz);</li>
-    <li>Página de busca na qual um admin (produtor) pode colocar o número de profissionais que precisa, o gênero de sua obra, a data na qual precisará iniciar as gravações e o orçamento máximo, e receber uma indicação de quais atores e atrizes contratar que se encaixem nos requisitos;</li>
-    <li>Possibilidade de reservar a data de um ator ou atriz e exibição de status;</li> 
-    <li>Filtro por status e classificação por relevância e preço;</li>   
-    <li>Visão do usuário (ator/atriz) mostrando suas datas já reservadas;</li>
-    <li>Dashboard de Admin (produtor) mostrando o número de reservas realizado até o momento, datas com mais reservas e atores/atrizes mais reservados.</li>
-  </ul>
-  
-<p align="jutify"><b>Itens adicionais para o dia 09/10 (entrega parcial):</b></p>
-
-<ul>
-  <li>Além do Github com o código em si, vocês deverão usar de outros aprendizados obtidos nessa academia para entregar o projeto</li>
-  <li>No Read.Me do GitHub, vocês devem explicar quais cerimônias, papéis e artefatos do Scrum utilizaram para o desenvolvimento do projeto e detalhes de como isso sucedeu. Utilizem sprints de 1 semana</li>
-  <li>Vocês também devem explicar qual lógica utilizaram na escolha da dupla, por que seus perfis se complementam, fortalezas e pontos de melhoria de cada um</li>
-</ul>
-
-**Prontos então? VA-LEN-DO! #GoGama**
-
-<hr />
-
-**Desafio Final - Entrega 2/2**
-
-<hr/>
-
-**3. Tecnologias Utilizadas:** 
-
-<hr/>
-
-**4. Modelo de Commits:**
-
-  - **Modelo**
+    - **Modelo**
     <code>DD_MM_YYYY__ORDENACAO__DESCRICAO_DO_PROBLEMA</code>
 
-  - **Exemplo**
-    **<code>07_10_2020__001__IMPLEMENTACAO_DAS_ENTIDADES</code>**
+    - **Exemplo**
+    **<code>07_10_2020__001__IMPLEMENTACAO_DAS_ENTIDADES</code>** 
     
-<hr/>
-
-**5. Modelo da Metodologia Ágil:**
-
-  - Scrum
-  - Kanbam
-
-**Definição de Cerimônia:** 
+#### Metodologias Ágeis Utilizadas
   
-  - Sprint Planning Meeting
-  - Daily Scrum
-  - Sprint Review Meeting
-  - Sprint Retrospective
+    - Scrum
+    - Kanbam
 
-**Definição de Papéis:** 
+### Papéis da Equipe
 
-  **- Gama Academy (Stackholders):** PRODUCT OWNER
-  **- Nicholas Mateus:** DEVELOPER TEAM
-  **- Randerson Thallys:** DEVELOPER TEAM / SCRUM MASTER
-  **- Tarcísio Dantas:** DEVELOPER TEAM
+    - **__Product Owner:__** Nicholas Mateus
+    - **__Scrum Master:__** Randerson Thallys
+    - **__Developer Team:__** Nicholas Mateus, Randerson Thallys, Tarcísio Dantas
+
+### Artefatos do Scrum
+
+#### Backlog Produto
+
+    - Login / Logout
+    - Função de validação de usuário e senha
+    - Cadastro de Usuário
+    - Validação de duplicidade de CPF no cadastro do usuário
+    - Perfil do Usuário
+    - Dados de perfil
+    - Histórico de reservas artistas para um elenco
+    - Busca de usuários (atriz/ator) disponíveis
+    - Confirmação da indicação
+    - Dashboard mostrando reservas realizadas, datas com mais reservas e atores/atrizes mais reservados para o produtor da obra
+    - Artistas favoritos
+    - Integração com redes sociais
   
-**Definição de Artefatos:** 
+#### Sprint Backlog
 
-  **1. Sprint Planning Meeting:** 
-       
-       1. Utilizar o Planning Poker para implementar o gráfico de Burndown;
-       2. Sprints com duração entre 8 a 9 dias;
-       3. Grooming da Sprint.
-       
-  **2. Daily Scrum:** 
-  
-        1. Reuniões diárias de até 15 minutos;
-        2. Acompanhar gráfico de Burndown através dos story points para analisar o andamento do projeto;
-        
-  **3. Sprint Review Meeting:**
-  
-        1. Duração da reunião até 30 minutos
-        2. Grooming do Produto.
-        
-  **4. Sprint Retrospective:**
+    1. [ X ] Repositório GIT;
+    2. [ X ] README do GIT;
+    3. [ X ] Critérios da escolha da Equipe;
+    4. [ X ] Pontos positivos e a melhorar da equipe;
 
-        1. Duração da reunião até 15 minutos
-        2. O que foi bom?
-        3. O que melhorar?
-        4. Como melhorar?
-        
+## Scrum
+
+### Cerimônias do Scrum
+
+#### Sprint Planning
+  
+    - Utilizar o Planning Poker para implementar o gráfico de Burndown;
+    - Grooming da Sprint.
+    - Planejamentos de como seriam os Epicos candidatos a primeira sprint e atribuicao de pontuacao para ordenacao no backlog do produto. 
+
+#### Daly Meeting
+    
+    - Reuniões diárias de até 15 minutos para discussões de features e regras de negócios, andamento de tasks e atribuições;
+    - Acompanhar gráfico de Burndown através dos story points para analisar o andamento do projeto.
+
+#### Sprint Review
+    
+    - Irá acontecer até o dia 09/10/2020
+
+#### Sprint Retrospective
+
+    - Irá acontecer até o dia 09/10/2020
+    - O que foi bom?
+    - O que melhorar?
+    - Como melhorar?
+
+#### Critérios de Escolha do time
+  
+    - Facilidade de se comunicar  
+    - Trabalho em equipe
+  
+## Melhoria Contínua da Equipe
+
+|Integrante|Pontos Positivos|Observação de Melhoria|Contato|
+|-|-|-|-|
+|Nicholas Mateus|Analítico e detalhista|Domínio e conhecimento de C#/.Net, Azure DevOps.|[![Linkedin Badge](https://img.shields.io/badge/-Nicholas_Mateus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicholas-mateus-veloso/)](https://www.linkedin.com/in/nicholas-mateus-veloso/)
+|Randerson Thallys|Facilidade de comunicação e interação entre a equipe|Domínio e conhecimento de C#/.Net, Azure DevOps.|[![Linkedin Badge](https://img.shields.io/badge/-Randerson_Thallys-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/randersonthallys/)](https://www.linkedin.com/in/randersonthallys/)
+|Tarcísio Dantas|Facilidade de Gestão de Projeto, analise de requisitos|Domínio e conhecimento de C#/.Net, Azure DevOps.|[![Linkedin Badge](https://img.shields.io/badge/-Tarcísio_Dantas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tarcisio-dantas-251034121/)](https://www.linkedin.com/in/tarcisio-dantas-251034121/)
