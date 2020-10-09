@@ -7,17 +7,17 @@
     
 ### Descrição do Projeto
   
-<p align="justify">Deverá realizar o desenvolvilmento de um sistema, voltado ao controle de habilidades e salários de uma Emissora de TV, visando o seu corpo artístico.</p>
+<p align="justify">Deverá realizar o desenvolvimento de um sistema, voltado ao controle de habilidades e salários de uma Emissora de TV, visando o seu corpo artístico.</p>
 
 ### Principais Funcionalidades (Entregas Obrigatórias)
 
 - Logar no sistema TV+, se for a primeira vez efetuar o cadastro
-- Efetuar uma reserva de um artista disponível
+- Efetuar uma reserva de um artista disponível para um elenco
 
 ### Características
 
 - Consultar artistas disponíveis para efetuar possíveis reservas para obras dos produtores
-- Realizar consultas artistas já reservadas ou pagas
+- Realizar consultas artistas já com reservas para um elenco
 
 ### Tecnologia
 
@@ -33,11 +33,11 @@
   
 - **Modelo**
 
-<code>DD_MM_YYYY__ORDENACAO__DESCRICAO_DO_PROBLEMA</code>
+<code> DD_MM_YYYY__ORDENACAO__DESCRICAO_DO_PROBLEMA </code>
 
 - **Exemplo**
 
-**<code>07_10_2020__001__IMPLEMENTACAO_DAS_ENTIDADES</code>** 
+**<code> 07_10_2020__001__IMPLEMENTACAO_DAS_ENTIDADES </code>** 
     
 #### Metodologias Ágeis Utilizadas
   
@@ -107,8 +107,26 @@
   
 ## Melhoria Contínua da Equipe
 
-|Integrante|Pontos Positivos|Observação de Melhoria|Contato|
-|-|-|-|-|
-|Nicholas Mateus|Analítico e detalhista|Domínio e conhecimento de C#/.Net, Azure DevOps.|[![Linkedin Badge](https://img.shields.io/badge/-Nicholas_Mateus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicholas-mateus-veloso/)](https://www.linkedin.com/in/nicholas-mateus-veloso/)
-|Randerson Thallys|Facilidade de comunicação e interação entre a equipe|Domínio e conhecimento de C#/.Net, Azure DevOps.|[![Linkedin Badge](https://img.shields.io/badge/-Randerson_Thallys-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/randersonthallys/)](https://www.linkedin.com/in/randersonthallys/)
-|Tarcísio Dantas|Facilidade de Gestão de Projeto, analise de requisitos|Domínio e conhecimento de C#/.Net, Azure DevOps.|[![Linkedin Badge](https://img.shields.io/badge/-Tarcísio_Dantas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tarcisio-dantas-251034121/)](https://www.linkedin.com/in/tarcisio-dantas-251034121/)
+### Integrantes
+
+- Nicholas Mateus
+- Randerson Thallys
+- Tarcísio Dantas
+    
+### Pontos Positivos
+
+- Analítico, Interação entre a Equipe, Meticuloso
+- Facilidade de Comunicação e Interação entre a Equipe
+- Facilidade de Gestão de Projeto, Análise de Requisitos
+    
+### Observação de Melhoria
+
+- Domínio da Plataforma Azure DevOps. Domínio da Linguagem de Programação C# e o Framework .Net
+- Domínio da Plataforma Azure DevOps. Domínio da Linguagem de Programação C# e o Framework .Net
+- Domínio da Plataforma Azure DevOps. Domínio da Linguagem de Programação C# e o Framework .Net
+    
+### Contatos
+
+- [![Linkedin Badge](https://img.shields.io/badge/-Nicholas_Mateus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicholas-mateus-veloso/)](https://www.linkedin.com/in/nicholas-mateus-veloso/)
+- [![Linkedin Badge](https://img.shields.io/badge/-Randerson_Thallys-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/randersonthallys/)](https://www.linkedin.com/in/randersonthallys/)
+- [![Linkedin Badge](https://img.shields.io/badge/-Tarcísio_Dantas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tarcisio-dantas-251034121/)](https://www.linkedin.com/in/tarcisio-dantas-251034121/)
