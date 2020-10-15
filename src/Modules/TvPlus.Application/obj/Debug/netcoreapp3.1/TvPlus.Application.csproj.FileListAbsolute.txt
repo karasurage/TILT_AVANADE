@@ -1,0 +1,12 @@
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csprojAssemblyReference.cache
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.AssemblyInfoInputs.cache
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.AssemblyInfo.cs
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csproj.CoreCompileInputs.cache
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Application.deps.json
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Application.dll
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Application.pdb
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Domain.dll
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Domain.pdb
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csproj.CopyComplete
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.dll
+C:\Users\PICHAU\Desktop\Projeto Gama Academy\TV+\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.pdb

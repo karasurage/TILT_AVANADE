@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YkUL9kezCmUd7Zx6Ky26WIhZWbrx6YvS0fxBy6EchCRIiNDO0MVgvwqSaZbOkjcePOep0mgMU6ybXhnrX6xjQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Services\\TvPlus.Api\\TvPlus.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PICHAU\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,158 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "TvPlus.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "TvPlus.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TvPlus.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TvPlus.Application.dll": {}
+        }
+      },
+      "TvPlus.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TvPlus.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TvPlus.Domain.dll": {}
+        }
+      },
+      "TvPlus.Infrastructure.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "TvPlus.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TvPlus.Infrastructure.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TvPlus.Infrastructure.Repositories.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.9": {
+      "sha512": "8PkcaPwiTPOhqshoY4+rQUbz86X6YpLDLUqXOezh7L2A3pgpBmeBBByYIffofBlvQxDdQ0zB2DkWjbZWyCxRWg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "TvPlus.Application/1.0.0": {
+      "type": "project",
+      "path": "../TvPlus.Application/TvPlus.Application.csproj",
+      "msbuildProject": "../TvPlus.Application/TvPlus.Application.csproj"
+    },
+    "TvPlus.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TvPlus.Domain/TvPlus.Domain.csproj",
+      "msbuildProject": "../TvPlus.Domain/TvPlus.Domain.csproj"
+    },
+    "TvPlus.Infrastructure.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../TvPlus.Infrastrutucture.Repositories/TvPlus.Infrastructure.Repositories.csproj",
+      "msbuildProject": "../TvPlus.Infrastrutucture.Repositories/TvPlus.Infrastructure.Repositories.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 3.1.9",
+      "TvPlus.Application >= 1.0.0",
+      "TvPlus.Infrastructure.Repositories >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\PICHAU\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
+      "projectName": "TvPlus.Infrastructure.Ioc",
+      "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
+      "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastructure.Ioc\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {
+              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj"
+            },
+            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj": {
+              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[3.1.9, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

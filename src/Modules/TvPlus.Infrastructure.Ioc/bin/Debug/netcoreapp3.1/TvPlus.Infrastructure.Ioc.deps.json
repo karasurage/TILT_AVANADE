@@ -1,0 +1,79 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TvPlus.Infrastructure.Ioc/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.9",
+          "TvPlus.Application": "1.0.0",
+          "TvPlus.Infrastructure.Repositories": "1.0.0"
+        },
+        "runtime": {
+          "TvPlus.Infrastructure.Ioc.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.9": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.1.9.0",
+            "fileVersion": "3.100.920.47302"
+          }
+        }
+      },
+      "TvPlus.Application/1.0.0": {
+        "dependencies": {
+          "TvPlus.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TvPlus.Application.dll": {}
+        }
+      },
+      "TvPlus.Domain/1.0.0": {
+        "runtime": {
+          "TvPlus.Domain.dll": {}
+        }
+      },
+      "TvPlus.Infrastructure.Repositories/1.0.0": {
+        "dependencies": {
+          "TvPlus.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TvPlus.Infrastructure.Repositories.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TvPlus.Infrastructure.Ioc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PkcaPwiTPOhqshoY4+rQUbz86X6YpLDLUqXOezh7L2A3pgpBmeBBByYIffofBlvQxDdQ0zB2DkWjbZWyCxRWg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.9",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512"
+    },
+    "TvPlus.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TvPlus.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TvPlus.Infrastructure.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

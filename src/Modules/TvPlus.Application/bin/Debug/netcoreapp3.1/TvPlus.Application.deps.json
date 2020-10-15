@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TvPlus.Application/1.0.0": {
+        "dependencies": {
+          "TvPlus.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TvPlus.Application.dll": {}
+        }
+      },
+      "TvPlus.Domain/1.0.0": {
+        "runtime": {
+          "TvPlus.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TvPlus.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TvPlus.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

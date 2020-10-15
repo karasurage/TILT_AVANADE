@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Console", "0 - Console", "{463062A6-E7DF-4DB8-BF03-AAEF7478A332}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{E42F74CD-EBBD-48F1-97BF-C202C88AD1A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{9A843641-D97F-4FB3-836F-EBC510ADA3CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{D1300F93-7529-4B43-986E-73266699ADD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Tests", "4 - Tests", "{9FB3D8E1-3898-4B38-A816-DDC31514B190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvPlus.Domain", "src\Modules\TvPlus.Domain\TvPlus.Domain.csproj", "{2CB5D9AE-09DA-490C-9C79-8243ADED6C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Repositories", "3.1 - Repositories", "{6639C2C2-BA05-4801-834A-A39AB8426ED8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - IoC", "3.2 - IoC", "{BD196F81-DB0E-4950-8319-CC4D5E83B3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvPlus.Infrastructure.Repositories", "src\Modules\TvPlus.Infrastrutucture.Repositories\TvPlus.Infrastructure.Repositories.csproj", "{FB0E7893-74D0-441D-B75F-548C1DE1A66C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvPlus.Application", "src\Modules\TvPlus.Application\TvPlus.Application.csproj", "{96400ACE-CF99-40AA-AF76-2D40F6C32A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvPlus.Infrastructure.Ioc", "src\Modules\TvPlus.Infrastructure.Ioc\TvPlus.Infrastructure.Ioc.csproj", "{EE26CE46-B680-4368-9C2D-4CC0F177D8FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvPlus.Api", "src\Services\TvPlus.Api\TvPlus.Api.csproj", "{007BDBBA-F465-4A0E-A46C-0B9E4FE9EBC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CB5D9AE-09DA-490C-9C79-8243ADED6C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB5D9AE-09DA-490C-9C79-8243ADED6C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB5D9AE-09DA-490C-9C79-8243ADED6C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB5D9AE-09DA-490C-9C79-8243ADED6C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0E7893-74D0-441D-B75F-548C1DE1A66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0E7893-74D0-441D-B75F-548C1DE1A66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0E7893-74D0-441D-B75F-548C1DE1A66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0E7893-74D0-441D-B75F-548C1DE1A66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96400ACE-CF99-40AA-AF76-2D40F6C32A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96400ACE-CF99-40AA-AF76-2D40F6C32A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96400ACE-CF99-40AA-AF76-2D40F6C32A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96400ACE-CF99-40AA-AF76-2D40F6C32A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE26CE46-B680-4368-9C2D-4CC0F177D8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE26CE46-B680-4368-9C2D-4CC0F177D8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE26CE46-B680-4368-9C2D-4CC0F177D8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE26CE46-B680-4368-9C2D-4CC0F177D8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007BDBBA-F465-4A0E-A46C-0B9E4FE9EBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007BDBBA-F465-4A0E-A46C-0B9E4FE9EBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007BDBBA-F465-4A0E-A46C-0B9E4FE9EBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007BDBBA-F465-4A0E-A46C-0B9E4FE9EBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CB5D9AE-09DA-490C-9C79-8243ADED6C72} = {9A843641-D97F-4FB3-836F-EBC510ADA3CB}
+		{6639C2C2-BA05-4801-834A-A39AB8426ED8} = {D1300F93-7529-4B43-986E-73266699ADD3}
+		{BD196F81-DB0E-4950-8319-CC4D5E83B3BC} = {D1300F93-7529-4B43-986E-73266699ADD3}
+		{FB0E7893-74D0-441D-B75F-548C1DE1A66C} = {6639C2C2-BA05-4801-834A-A39AB8426ED8}
+		{96400ACE-CF99-40AA-AF76-2D40F6C32A62} = {E42F74CD-EBBD-48F1-97BF-C202C88AD1A1}
+		{EE26CE46-B680-4368-9C2D-4CC0F177D8FF} = {BD196F81-DB0E-4950-8319-CC4D5E83B3BC}
+		{007BDBBA-F465-4A0E-A46C-0B9E4FE9EBC8} = {463062A6-E7DF-4DB8-BF03-AAEF7478A332}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48A00A0E-A588-4CBB-9C13-E46346938A60}
+	EndGlobalSection
+EndGlobal
