@@ -12,7 +12,7 @@ namespace TvPlus.Domain.Entities
         public string Phone { get; private set; }
         public string CPF { get; private set; }
 
-        public Usuario(string name, string email, string phone, string cPF)
+        public Usuario(string name, string email, string phone, string cPF )
         {
             Id = Guid.NewGuid();
             Name = name;
@@ -20,6 +20,8 @@ namespace TvPlus.Domain.Entities
             Phone = phone;
             CPF = cPF;
         }
+
+     
 
         public bool IsValid()
         {

@@ -25,7 +25,10 @@ namespace TvPlus.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+         
+            services.AddOptions();
             services.AddControllers();
+            services.AddOptions();
             RegisterServices(services);
 
         }
@@ -39,13 +42,14 @@ namespace TvPlus.Api
             }
 
             app.UseRouting();
-
+            app.UseCors("CorsPolicy");
+            app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
         }
 
         void RegisterServices(IServiceCollection services)

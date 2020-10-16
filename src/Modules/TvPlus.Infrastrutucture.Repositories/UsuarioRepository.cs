@@ -12,9 +12,12 @@ namespace TvPlus.Infrastrutucture.Repositories
     {
         private List<Usuario> usuarios;
 
-        public UsuarioRepository(Usuario usuario)
+    
+
+        public UsuarioRepository()
         {
-            usuarios.Add(usuario);
+            usuarios = new List<Usuario>();
+            
         }
         public IEnumerable<Usuario> Get()
         {

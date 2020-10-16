@@ -4,7 +4,7 @@ using TvPlus.Infrastrutucture.Repositories;
 
 namespace TvPlus.Infrastructure.Ioc.Repository
 {
-    class RespositoryBootstrapper
+    internal class RespositoryBootstrapper
     {
         internal void ChildServiceRegister(IServiceCollection services)
         {
