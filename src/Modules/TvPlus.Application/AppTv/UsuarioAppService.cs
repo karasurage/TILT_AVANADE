@@ -22,23 +22,30 @@ namespace TvPlus.Application.AppTv
             return _usuarioRepository.Get();
         }
 
-        public Usuario GetById(Guid id)
+        public Usuario GetById(int id)
         {
             return _usuarioRepository.GetById(id); 
         }
 
-        public Guid Insert(UsuarioInput input)
+        public Usuario Insert(UsuarioInput input)
         {
-            var usuairo = new Usuario(input.Name, input.Email, input.CPF, input.Phone );
-
-            if (!usuairo.IsValid())
+            try
             {
-                throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
+                var usuairo = new Usuario(input.Name, input.Email, input.Phone, input.CPF);
+
+                if (!usuairo.IsValid())
+                {
+                    throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
+                }
+
+                _usuarioRepository.Insert(usuairo);
+
+                return usuairo;
             }
-
-            _usuarioRepository.Insert(usuairo);
-
-            return usuairo.Id;
+            catch(Exception e)
+            {
+                throw new Exception("O banco está fora do Ar no Momento! ");
+            }
         }
     }
 }

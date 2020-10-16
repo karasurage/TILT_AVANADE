@@ -8,8 +8,8 @@ namespace TvPlus.Application.AppTv.Interfaces
 {
     public interface IUsuarioAppService
     {
-        Guid Insert(UsuarioInput usuario);
-        Usuario GetById(Guid id);
+        Usuario Insert(UsuarioInput usuario);
+        Usuario GetById(int id);
         IEnumerable<Usuario> Get();
     }
 }

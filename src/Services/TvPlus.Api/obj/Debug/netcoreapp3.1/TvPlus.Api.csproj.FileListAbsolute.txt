@@ -58,3 +58,11 @@ C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\obj\Debug\netcoreap
 C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.dll
 C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.pdb
 C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.genruntimeconfig.cache
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\PICHAU\Desktop\Projeto Tilt\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
