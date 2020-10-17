@@ -1,8 +1,5 @@
--- Geração de Modelo físico
--- Sql ANSI 2003 - brModelo.
-
-
-
+-- Geração de Modelo físico 
+-- Sql ANSI 2003 - brModelo. 
 CREATE TABLE USER 
   ( 
      id                 INT PRIMARY KEY, 
