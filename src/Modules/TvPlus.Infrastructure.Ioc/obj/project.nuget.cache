@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ek2KEjvFo21SU3/eQG6SJ9X1IMaLt8RWe6+jC+f7Y6duiWiF4MXQogx+hwLBodM5SJ04JHt3UzAk80JbK/8UdQ==",
+  "dgSpecHash": "SH3WVripwNI6UlU4YMhjxpzV7v8Urky1IWgWtvnJJcTkRyGwtAuUuE3ZM8dsW6uI90C/60IWZiJc3RAOvTGlLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
+  "projectFilePath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PICHAU\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\PICHAU\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",

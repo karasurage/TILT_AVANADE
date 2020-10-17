@@ -591,11 +591,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
+      "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
       "projectName": "TvPlus.Infrastructure.Ioc",
-      "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
+      "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj",
       "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastructure.Ioc\\obj\\",
+      "outputPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastructure.Ioc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -611,11 +611,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {
-              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj"
+            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {
+              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj"
             },
-            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj": {
-              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj"
+            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj": {
+              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj"
             }
           }
         }

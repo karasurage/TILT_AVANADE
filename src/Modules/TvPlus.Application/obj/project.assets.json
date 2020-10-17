@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
+      "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
       "projectName": "TvPlus.Application",
-      "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
+      "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
       "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Application\\obj\\",
+      "outputPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj": {
-              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj"
+            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj": {
+              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj"
             }
           }
         }

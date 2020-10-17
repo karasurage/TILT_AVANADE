@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wBwwadzfFXi3TbOfCUIFirpBzXWCMVa7nCwTciRl6q1k2LBrccaA6U/vMQb/+a7kKKeM7PhyTRPlsgsPj7Y2xQ==",
+  "dgSpecHash": "iVqYPgy7ufXx3AOJl72b0Sg4igB2fBBnrH8jcjZ+nB42S2T5sipf0Bq9mxyx++QT5DfAUr62hSgdDsBarCOSaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj",
+  "projectFilePath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastrutucture.Repositories\\TvPlus.Infrastructure.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PICHAU\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\PICHAU\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
