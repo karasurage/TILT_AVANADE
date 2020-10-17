@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using TvPlus.Application.AppTv.Input;
 using TvPlus.Application.AppTv.Interfaces;
 using TvPlus.Domain.Entities;
@@ -22,9 +23,10 @@ namespace TvPlus.Application.AppTv
             return _usuarioRepository.Get();
         }
 
-        public Usuario GetById(int id)
+        public async Task<Usuario> GetByIdAsync(int id)
         {
-            return _usuarioRepository.GetById(id); 
+            return await _usuarioRepository.GetByIdAsync(id)
+                        .ConfigureAwait(false); 
         }
 
         public Usuario Insert(UsuarioInput input)
@@ -38,7 +40,8 @@ namespace TvPlus.Application.AppTv
                     throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
                 }
 
-                _usuarioRepository.Insert(usuairo);
+               var id =  _usuarioRepository.Insert(usuairo);
+                usuairo.SetId(id);
 
                 return usuairo;
             }

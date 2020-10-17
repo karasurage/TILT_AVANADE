@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using TvPlus.Domain.Entities;
 using TvPlus.Domain.Interfaces.Repositories;
 
@@ -14,7 +15,7 @@ namespace TvPlus.Infrastrutucture.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        private List<Usuario> usuarios;
+        
 
         private readonly IConfiguration _configuration;
 
@@ -22,25 +23,105 @@ namespace TvPlus.Infrastrutucture.Repositories
 
         public UsuarioRepository(IConfiguration configuration)
         {
-            usuarios = new List<Usuario>();
+            
             _configuration = configuration;
 
 
         }
         public IEnumerable<Usuario> Get()
         {
-            return usuarios.ToList();
+            try
+            {
+                using (var con = new SqlConnection(_configuration["ConnectionString"]))
+
+                {
+                    var usuarioList = new List<Usuario>();
+                    var query = $"SELECT *FROM Usuario";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+
+                        cmd.CommandType = CommandType.Text;
+
+                        con.Open();
+                        var retorno =  cmd.ExecuteReader();
+
+                        while (retorno.Read())
+                        {
+
+                            var usuario =
+                                new Usuario(int.Parse(retorno["Id"].ToString())
+                                , retorno["Name"].ToString(),
+                                retorno["Email"].ToString(),
+                                retorno["Phone"].ToString(),
+                                 retorno["CPF"].ToString(),
+                                 DateTime.Parse(retorno["Date"].ToString()));
+
+                           usuarioList.Add(usuario);
+                        }
+
+                        return usuarioList;
+                    }
+
+
+                }
+            }
+            catch (SqlException e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
-        public Usuario GetById(int id)
+        public async Task<Usuario> GetByIdAsync(int id)
         {
-            return usuarios.Where
-                (filter => filter.Id == id).FirstOrDefault();
+            try
+            {
+                using (var con = new SqlConnection(_configuration["ConnectionString"]))
 
+                {
+
+                    var query = $"SELECT *FROM Usuario WHERE Id = {id}";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+
+                        cmd.CommandType = CommandType.Text;
+
+                        con.Open();
+                        var retorno = await cmd.ExecuteReaderAsync()
+                                                .ConfigureAwait(false);
+
+                        while (retorno.Read())
+                        {
+                            
+                            var usuario =  
+                                new Usuario(int.Parse(retorno["Id"].ToString())
+                                , retorno["Name"].ToString(),
+                                retorno["Email"].ToString(),
+                                retorno["Phone"].ToString(),
+                                 retorno["CPF"].ToString(),
+                                 DateTime.Parse(retorno["Date"].ToString()));
+                            
+                            return usuario;
+                        }
+
+                        return default;
+                    }
+
+
+                }
+            }
+            catch (SqlException e)
+            {
+                throw new Exception(e.Message);
+            }
 
         }
 
-        public void Insert(Usuario usuario)
+
+    
+
+        public int Insert(Usuario usuario)
         {
             try
             {
@@ -49,7 +130,7 @@ namespace TvPlus.Infrastrutucture.Repositories
                 {
 
                     var query = @"INSERT INTO Usuario (Name, Email, Phone, CPF, Date)
-                                            VALUES (@name, @email, @phone, @cpf, @date)";
+                                            VALUES (@name, @email, @phone, @cpf, @date); SELECT scope_identity();";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -63,8 +144,11 @@ namespace TvPlus.Infrastrutucture.Repositories
                         cmd.Parameters.AddWithValue("date", usuario.Date);
 
                         con.Open();
-                        cmd.ExecuteNonQuery();
+                        return int.Parse(cmd.ExecuteScalar().ToString());
+                        
                     }
+
+
                 }
             }
             catch(SqlException e)

@@ -58,9 +58,10 @@ namespace TvPlus.Api.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
 
-        public IActionResult Get([FromRoute] int id)
+        public async Task<IActionResult> Get([FromRoute] int id)
         {
-            return Ok(_usuarioAppService.GetById(id));
+            return   Ok(await _usuarioAppService.GetByIdAsync(id)
+                    .ConfigureAwait(false));
         }
 
     }
