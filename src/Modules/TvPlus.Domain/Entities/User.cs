@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TvPlus.Domain.Entities
 {
-    public class Usuario
+    public class User
     {
         public int Id { get; private set; }
         public string Name { get; private set; }
@@ -13,7 +13,7 @@ namespace TvPlus.Domain.Entities
         public string CPF { get; private set; }
         public DateTime Date { get; private set; }
 
-        public Usuario(int id, string name, string email,
+        public User(int id, string name, string email,
             string phone, string cPF, DateTime date) 
         {
             SetId(id);
@@ -24,7 +24,7 @@ namespace TvPlus.Domain.Entities
             Date = date;
 
         }
-        public Usuario(string name, string email, string phone, string cPF )
+        public User(string name, string email, string phone, string cPF )
         {
             
             Name = name;

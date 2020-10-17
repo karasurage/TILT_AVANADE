@@ -11,12 +11,12 @@ namespace TvPlus.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UserController : ControllerBase
     {
-        private readonly IUsuarioAppService _usuarioAppService;
+        private readonly IUserAppService _usuarioAppService;
 
 
-        public UsuarioController(IUsuarioAppService usuarioAppService)
+        public UserController(IUserAppService usuarioAppService)
         {
             _usuarioAppService = usuarioAppService;
         }
@@ -27,7 +27,7 @@ namespace TvPlus.Api.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
 
-        public IActionResult Post([FromBody] UsuarioInput input)
+        public IActionResult Post([FromBody] UserInput input)
         {
             try
             {

@@ -7,10 +7,10 @@ using TvPlus.Domain.Entities;
 
 namespace TvPlus.Application.AppTv.Interfaces
 {
-    public interface IUsuarioAppService
+    public interface IUserAppService
     {
-        Usuario Insert(UsuarioInput usuario);
-        Task<Usuario> GetByIdAsync(int id);
-        IEnumerable<Usuario> Get();
+        User Insert(UserInput usuario);
+        Task<User> GetByIdAsync(int id);
+        IEnumerable<User> Get();
     }
 }

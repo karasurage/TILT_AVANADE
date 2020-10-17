@@ -8,7 +8,7 @@ namespace TvPlus.Infrastructure.Ioc.Repository
     {
         internal void ChildServiceRegister(IServiceCollection services)
         {
-            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
     }

@@ -11,7 +11,7 @@ namespace TvPlus.Infrastructure.Ioc.Application
     {
         internal void ChildServiceRegister(IServiceCollection services)
         {
-            services.AddScoped<IUsuarioAppService, UsuarioAppService>();
+            services.AddScoped<IUserAppService, UserAppService>();
         }
 
     }

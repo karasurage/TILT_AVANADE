@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TvPlus.Application.AppTv.Input
 {
-    public class UsuarioInput
+    public class UserInput
     {
         
         public string Name { get;  set; }

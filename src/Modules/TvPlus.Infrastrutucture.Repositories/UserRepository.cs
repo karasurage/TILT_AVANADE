@@ -13,7 +13,7 @@ using TvPlus.Domain.Interfaces.Repositories;
 
 namespace TvPlus.Infrastrutucture.Repositories
 {
-    public class UsuarioRepository : IUsuarioRepository
+    public class UserRepository : IUserRepository
     {
         
 
@@ -21,21 +21,21 @@ namespace TvPlus.Infrastrutucture.Repositories
 
     
 
-        public UsuarioRepository(IConfiguration configuration)
+        public UserRepository(IConfiguration configuration)
         {
             
             _configuration = configuration;
 
 
         }
-        public IEnumerable<Usuario> Get()
+        public IEnumerable<User> Get()
         {
             try
             {
                 using (var con = new SqlConnection(_configuration["ConnectionString"]))
 
                 {
-                    var usuarioList = new List<Usuario>();
+                    var usuarioList = new List<User>();
                     var query = $"SELECT *FROM Usuario";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
@@ -50,7 +50,7 @@ namespace TvPlus.Infrastrutucture.Repositories
                         {
 
                             var usuario =
-                                new Usuario(int.Parse(retorno["Id"].ToString())
+                                new User(int.Parse(retorno["Id"].ToString())
                                 , retorno["Name"].ToString(),
                                 retorno["Email"].ToString(),
                                 retorno["Phone"].ToString(),
@@ -72,7 +72,7 @@ namespace TvPlus.Infrastrutucture.Repositories
             }
         }
 
-        public async Task<Usuario> GetByIdAsync(int id)
+        public async Task<User> GetByIdAsync(int id)
         {
             try
             {
@@ -95,7 +95,7 @@ namespace TvPlus.Infrastrutucture.Repositories
                         {
                             
                             var usuario =  
-                                new Usuario(int.Parse(retorno["Id"].ToString())
+                                new User(int.Parse(retorno["Id"].ToString())
                                 , retorno["Name"].ToString(),
                                 retorno["Email"].ToString(),
                                 retorno["Phone"].ToString(),
@@ -121,7 +121,7 @@ namespace TvPlus.Infrastrutucture.Repositories
 
     
 
-        public int Insert(Usuario usuario)
+        public int Insert(User usuario)
         {
             try
             {

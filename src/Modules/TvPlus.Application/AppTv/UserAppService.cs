@@ -9,31 +9,31 @@ using TvPlus.Domain.Interfaces.Repositories;
 
 namespace TvPlus.Application.AppTv
 {
-    public class UsuarioAppService : IUsuarioAppService
+    public class UserAppService : IUserAppService
     {
-        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly IUserRepository _usuarioRepository;
 
-        public UsuarioAppService(IUsuarioRepository usuarioRepository)
+        public UserAppService(IUserRepository usuarioRepository)
         {
             _usuarioRepository = usuarioRepository;
         }
 
-        public IEnumerable<Usuario> Get()
+        public IEnumerable<User> Get()
         {
             return _usuarioRepository.Get();
         }
 
-        public async Task<Usuario> GetByIdAsync(int id)
+        public async Task<User> GetByIdAsync(int id)
         {
             return await _usuarioRepository.GetByIdAsync(id)
                         .ConfigureAwait(false); 
         }
 
-        public Usuario Insert(UsuarioInput input)
+        public User Insert(UserInput input)
         {
             try
             {
-                var usuairo = new Usuario(input.Name, input.Email, input.Phone, input.CPF);
+                var usuairo = new User(input.Name, input.Email, input.Phone, input.CPF);
 
                 if (!usuairo.IsValid())
                 {
