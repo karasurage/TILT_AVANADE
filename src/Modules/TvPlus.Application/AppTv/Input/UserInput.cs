@@ -7,10 +7,11 @@ namespace TvPlus.Application.AppTv.Input
     public class UserInput
     {
         
-        public string Name { get;  set; }
+        public string FirstName { get;  set; }
+        public string LastName { get; set; }    
         public string Email { get;  set; }
         public string Phone { get;  set; }
-        public string CPF { get;  set; }
+    
 
 
     }

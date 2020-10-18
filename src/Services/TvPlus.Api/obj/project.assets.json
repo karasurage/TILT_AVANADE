@@ -605,20 +605,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PICHAU\\.nuget\\packages\\": {}
+    "C:\\Users\\RandersonThallys\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Services\\TvPlus.Api\\TvPlus.Api.csproj",
+      "projectUniqueName": "C:\\Users\\RandersonThallys\\Desktop\\Academia\\TILT_AVANADE\\src\\Services\\TvPlus.Api\\TvPlus.Api.csproj",
       "projectName": "TvPlus.Api",
-      "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Services\\TvPlus.Api\\TvPlus.Api.csproj",
-      "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Services\\TvPlus.Api\\obj\\",
+      "projectPath": "C:\\Users\\RandersonThallys\\Desktop\\Academia\\TILT_AVANADE\\src\\Services\\TvPlus.Api\\TvPlus.Api.csproj",
+      "packagesPath": "C:\\Users\\RandersonThallys\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RandersonThallys\\Desktop\\Academia\\TILT_AVANADE\\src\\Services\\TvPlus.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\RandersonThallys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -630,11 +635,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {
-              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj"
+            "C:\\Users\\RandersonThallys\\Desktop\\Academia\\TILT_AVANADE\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {
+              "projectPath": "C:\\Users\\RandersonThallys\\Desktop\\Academia\\TILT_AVANADE\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj"
             },
-            "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj": {
-              "projectPath": "C:\\Users\\PICHAU\\Desktop\\Projeto Tilt2\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj"
+            "C:\\Users\\RandersonThallys\\Desktop\\Academia\\TILT_AVANADE\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj": {
+              "projectPath": "C:\\Users\\RandersonThallys\\Desktop\\Academia\\TILT_AVANADE\\src\\Modules\\TvPlus.Infrastructure.Ioc\\TvPlus.Infrastructure.Ioc.csproj"
             }
           }
         }
@@ -665,7 +670,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
