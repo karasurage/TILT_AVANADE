@@ -33,7 +33,7 @@ namespace TvPlus.Application.AppTv
         {
             try
             {
-                var usuairo = new User(input.Name, input.Email, input.Phone, input.CPF);
+                var usuairo = new User(input.FirstName, input.LastName, input.Email, input.Phone);
 
                 if (!usuairo.IsValid())
                 {
