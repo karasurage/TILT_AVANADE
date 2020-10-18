@@ -9,7 +9,7 @@ namespace TvPlus.Domain.Interfaces.Repositories
     public interface IUserRepository
     {
 
-        int Insert(User usuario);
+        void Insert(User usuario);
         Task<User> GetByIdAsync(int id);
         IEnumerable<User> Get();
     }

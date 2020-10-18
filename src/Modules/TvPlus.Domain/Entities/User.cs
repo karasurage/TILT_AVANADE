@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace TvPlus.Domain.Entities
 {
@@ -14,25 +15,29 @@ namespace TvPlus.Domain.Entities
 
         /*  Constructor */
         public User(int id, string firstname, string lastName, string email,
-            string phone,  DateTime date) 
+            Actor actor ,string phone, DateTime data) 
         {
             SetId(id);
             FirstName = firstname;
             LastName = lastName;
             Email = email;
             Phone = phone;
-            Date = date;
+            Actor = actor;
+            Date = data;
 
         }
-        public User(string firstname, string lastName, string email, string phone )
+        public User(string firstname, string lastName, string email,
+            Actor actor, string phone)
         {
 
             FirstName = firstname;
             LastName = lastName;
             Email = email;
+            Actor = actor;
             Phone = phone;
             Date = DateTime.Now;
         }
+
 
         /*Method Custom*/
 
