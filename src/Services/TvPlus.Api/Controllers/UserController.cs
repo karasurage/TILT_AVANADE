@@ -18,7 +18,14 @@ namespace TvPlus.Api.Controllers
 
         public UserController(IUserAppService usuarioAppService)
         {
-            _usuarioAppService = usuarioAppService;
+            try
+            {
+                _usuarioAppService = usuarioAppService;
+            }
+            catch(Exception e)
+            {
+                throw new Exception("Erro =>" + e);
+            }
         }
 
 
@@ -26,16 +33,17 @@ namespace TvPlus.Api.Controllers
         [ProducesResponseType(typeof(string), 201)]
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
-        public IActionResult Post([FromBody] UserInput input)
+
+        public void /*IActionResult*/ Post([FromBody] UserInput input)
         {
             try
             {
-                var item = _usuarioAppService.Insert(input);
-                return Created("", item);
+               /* var item =*/ _usuarioAppService.Insert(input);
+               /* return Created("", item);*/
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro => {ex.Message}");
+              /*  return*/ BadRequest($"Erro => {ex.Message}");
             }
         }
 

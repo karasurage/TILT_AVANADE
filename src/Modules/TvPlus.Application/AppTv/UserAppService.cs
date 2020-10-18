@@ -29,25 +29,27 @@ namespace TvPlus.Application.AppTv
                         .ConfigureAwait(false); 
         }
 
-        public User Insert(UserInput input)
+        public void Insert(UserInput input)
         {
             try
             {
-                var usuairo = new User(input.FirstName, input.LastName, input.Email, input.Phone);
+                var usuairo = new User(input.FirstName, input.LastName, input.Email,
+                    new Actor(input.Actor.ActorGenre, input.Actor.CPF,
+                    input.Actor.HourValue), input.Phone);
 
                 if (!usuairo.IsValid())
                 {
                     throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
                 }
 
-               var id =  _usuarioRepository.Insert(usuairo);
+               /*var id =  _usuarioRepository.Insert(usuairo);
                 usuairo.SetId(id);
 
-                return usuairo;
+                return usuairo;*/
             }
             catch(Exception e)
             {
-                throw new Exception("O banco está fora do Ar no Momento! ");
+                throw new Exception("O banco está fora do Ar no Momento! Erro =" + e);
             }
         }
     }

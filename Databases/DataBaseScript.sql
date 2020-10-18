@@ -1,6 +1,4 @@
-  
-
-	CREATE DATABASE TvPlus; 
+CREATE DATABASE TvPlus; 
 
 	USE TvPlus; 
 
@@ -68,10 +66,4 @@ FK_IdLogs INT,
 FOREIGN KEY(FK_IdUser) REFERENCES [User] (Id) ON DELETE SET NULL,
 FOREIGN KEY(FK_IdLogs) REFERENCES [Logs] (Id) ON DELETE SET NULL
 );
-
-
-
-
-
-
 

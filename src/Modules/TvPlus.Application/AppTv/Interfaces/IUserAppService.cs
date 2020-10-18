@@ -9,8 +9,9 @@ namespace TvPlus.Application.AppTv.Interfaces
 {
     public interface IUserAppService
     {
-        User Insert(UserInput usuario);
+        void Insert(UserInput usuario);
         Task<User> GetByIdAsync(int id);
-        IEnumerable<User> Get();
+
+       IEnumerable<User> Get();
     }
 }
