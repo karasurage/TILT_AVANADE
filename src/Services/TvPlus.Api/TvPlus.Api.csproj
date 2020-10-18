@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fluent.Infrastructure" Version="2.0.0-beta-01" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0" />
+    <PackageReference Include="Microsoft.Owin.Security.OAuth" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Modules\TvPlus.Application\TvPlus.Application.csproj" />
     <ProjectReference Include="..\..\Modules\TvPlus.Infrastructure.Ioc\TvPlus.Infrastructure.Ioc.csproj" />
   </ItemGroup>

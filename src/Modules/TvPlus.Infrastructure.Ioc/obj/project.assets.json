@@ -220,6 +220,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.9",
           "System.Data.SqlClient": "4.8.2",
           "TvPlus.Domain": "1.0.0",

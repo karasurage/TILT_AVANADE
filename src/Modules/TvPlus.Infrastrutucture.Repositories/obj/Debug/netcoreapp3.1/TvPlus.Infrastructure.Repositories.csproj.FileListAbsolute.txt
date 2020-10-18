@@ -42,7 +42,6 @@ C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infra
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infrastrutucture.Repositories\obj\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.csprojAssemblyReference.cache
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infrastrutucture.Repositories\obj\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.AssemblyInfoInputs.cache
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infrastrutucture.Repositories\obj\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.AssemblyInfo.cs
-C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infrastrutucture.Repositories\obj\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.csproj.CoreCompileInputs.cache
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infrastrutucture.Repositories\obj\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.csproj.CopyComplete
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infrastrutucture.Repositories\obj\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.dll
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Infrastrutucture.Repositories\obj\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.pdb

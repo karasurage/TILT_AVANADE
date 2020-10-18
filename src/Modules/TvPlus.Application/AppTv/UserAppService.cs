@@ -11,44 +11,74 @@ namespace TvPlus.Application.AppTv
 {
     public class UserAppService : IUserAppService
     {
-        private readonly IUserRepository _usuarioRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly IProfileRepository _profileRepository;
+        private readonly ISmartNotification _notification;
 
-        public UserAppService(IUserRepository usuarioRepository)
+        public UserAppService(ISmartNotification notification,
+                                IUserRepository userRepository,
+                                IProfileRepository profileRepository)
         {
-            _usuarioRepository = usuarioRepository;
+            _userRepository = userRepository;
+            _profileRepository = profileRepository;
+            _notification = notification;
         }
-
-        public IEnumerable<User> Get()
+        public async Task<UserViewModel> InsertAsync(UserInput input)
         {
-            return _usuarioRepository.Get();
-        }
+            var profile = await _profileRepository
+                                    .GetByIdAsync(input.IdProfile)
+                                    .ConfigureAwait(false);
 
-        public async Task<User> GetByIdAsync(int id)
-        {
-            return await _usuarioRepository.GetByIdAsync(id)
-                        .ConfigureAwait(false); 
-        }
-
-        public User Insert(UserInput input)
-        {
-            try
+            if (profile is null)
             {
-                var usuairo = new User(input.FirstName, input.LastName, input.Email, input.Phone);
-
-                if (!usuairo.IsValid())
-                {
-                    throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
-                }
-
-               var id =  _usuarioRepository.Insert(usuairo);
-                usuairo.SetId(id);
-
-                return usuairo;
+                _notification.NewNotificationBadRequest("Perfil associado não existe!");
+                return default;
             }
-            catch(Exception e)
+
+            var user = new User(input.Name, input.Login, input.Password, profile);
+
+            if (!user.IsValid())
             {
-                throw new Exception("O banco está fora do Ar no Momento! ");
+                _notification.NewNotificationBadRequest("Dados do usuário são obrigatórios");
+                return default;
             }
+
+            var id = await _userRepository
+                            .InsertAsync(user)
+                            .ConfigureAwait(false);
+
+            return new UserViewModel(id, user.Login, user.Name, user.Profile, user.Created);
+        }
+
+        public async Task<UserViewModel> UpdateAsync(int id, UserInput input)
+        {
+            var user = await _userRepository
+                                    .GetByIdAsync(id)
+                                    .ConfigureAwait(false);
+
+            if (user is null)
+            {
+                _notification.NewNotificationBadRequest("Usuário não encontrado");
+                return default;
+            }
+
+            var profile = await _profileRepository
+                                    .GetByIdAsync(input.IdProfile)
+                                    .ConfigureAwait(false);
+
+            if (profile is null)
+            {
+                _notification.NewNotificationBadRequest("Perfil associado não existe!");
+                return default;
+            }
+
+            user.UpdateInfo(input.Name, input.Password, profile);
+
+            await _userRepository
+                    .UpdateAsync(user)
+                    .ConfigureAwait(false);
+
+            return new UserViewModel(id, user.Login, user.Name, user.Profile, user.Created);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,60 +16,55 @@ namespace TvPlus.Infrastrutucture.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        
-
         private readonly IConfiguration _configuration;
-
-    
-
         public UserRepository(IConfiguration configuration)
         {
-            
             _configuration = configuration;
-
-
         }
-        public IEnumerable<User> Get()
+
+        public async Task<User> GetByLoginAsync(string login)
         {
             try
             {
                 using (var con = new SqlConnection(_configuration["ConnectionString"]))
-
                 {
-                    var usuarioList = new List<User>();
-                    var query = $"SELECT *FROM Usuario";
+                    var sqlCmd = @$"SELECT U.Id, 
+                                           U.Name,
+                                           U.Login,
+                                           U.Password,
+                                           P.Id as idProfile,
+                                           P.Description 
+                                        FROM USER U
+                                    JOIN PROFILE P ON U.idProfile = P.Id
+                                    WHERE U.login='%{login}%'";
 
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    using (SqlCommand cmd = new SqlCommand(sqlCmd, con))
                     {
-
                         cmd.CommandType = CommandType.Text;
-
                         con.Open();
-                        var retorno =  cmd.ExecuteReader();
 
-                        while (retorno.Read())
+                        var reader = await cmd
+                                            .ExecuteReaderAsync()
+                                            .ConfigureAwait(false);
+
+                        while (reader.Read())
                         {
+                            var user = new User(int.Parse(reader["id"].ToString()),
+                                                reader["Name"].ToString(),
+                                                new Profile(int.Parse(reader["idProfile"].ToString()),
+                                                            reader["Description"].ToString()));
 
-                            var usuario =
-                                new User(int.Parse(retorno["Id"].ToString())
-                                , retorno["FirsName"].ToString(),
-                                retorno["LastName"].ToString(),
-                                retorno["Email"].ToString(),
-                                retorno["Phone"].ToString(),
-                                DateTime.Parse(retorno["Date"].ToString()));
-
-                           usuarioList.Add(usuario);
+                            user.InformationLoginUser(reader["Name"].ToString(), reader["Name"].ToString());
+                            return user;
                         }
 
-                        return usuarioList;
+                        return default;
                     }
-
-
                 }
             }
-            catch (SqlException e)
+            catch (SqlException ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
         }
 
@@ -77,84 +73,127 @@ namespace TvPlus.Infrastrutucture.Repositories
             try
             {
                 using (var con = new SqlConnection(_configuration["ConnectionString"]))
-
                 {
+                    var sqlCmd = @$"SELECT U.Id, 
+                                           U.Name,
+                                           U.Login,
+                                           U.Password,
+                                           P.Id as idProfile,
+                                           P.Description 
+                                        FROM USER U
+                                    JOIN PROFILE P ON U.idProfile = P.Id
+                                    WHERE U.Id='%{id}%'";
 
-                    var query = $"SELECT *FROM Usuario WHERE Id = {id}";
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    using (SqlCommand cmd = new SqlCommand(sqlCmd, con))
                     {
-
                         cmd.CommandType = CommandType.Text;
-
                         con.Open();
-                        var retorno = await cmd.ExecuteReaderAsync()
-                                                .ConfigureAwait(false);
 
-                        while (retorno.Read())
+                        var reader = await cmd
+                                            .ExecuteReaderAsync()
+                                            .ConfigureAwait(false);
+
+                        while (reader.Read())
                         {
-                            
-                            var usuario =  
-                                new User(int.Parse(retorno["Id"].ToString())
-                                , retorno["FirstName"].ToString(),
-                                 retorno["LastName"].ToString(),
-                                retorno["Email"].ToString(),
-                                retorno["Phone"].ToString(),
-                                DateTime.Parse(retorno["Date"].ToString()));
-                            
-                            return usuario;
+                            var user = new User(int.Parse(reader["id"].ToString()),
+                                                reader["Name"].ToString(),
+                                                new Profile(int.Parse(reader["idProfile"].ToString()),
+                                                            reader["Description"].ToString()));
+
+                            user.InformationLoginUser(reader["Name"].ToString(), reader["Name"].ToString());
+                            return user;
                         }
 
                         return default;
                     }
-
-
                 }
             }
-            catch (SqlException e)
+            catch (SqlException ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
-
         }
 
-
-    
-
-        public int Insert(User usuario)
+        public async Task<int> InsertAsync(User user)
         {
             try
             {
                 using (var con = new SqlConnection(_configuration["ConnectionString"]))
-
                 {
+                    var sqlCmd = @"INSERT INTO 
+                                    USER (IdProfile,
+                                            Name, 
+                                            Login, 
+                                            Password, 
+                                            Created) 
+                               VALUES (@profile, 
+                                        @name,
+                                        @login, 
+                                        @password,
+                                        @created); SELECT scope_identity();";
 
-                    var query = @"INSERT INTO Usuario (Name, Email, Phone, CPF, Date)
-                                            VALUES (@name, @email, @phone, @cpf, @date); SELECT scope_identity();";
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    using (SqlCommand cmd = new SqlCommand(sqlCmd, con))
                     {
-
                         cmd.CommandType = CommandType.Text;
 
-                        cmd.Parameters.AddWithValue("name", usuario.FirstName);
-                        cmd.Parameters.AddWithValue("email", usuario.Email);
-                        cmd.Parameters.AddWithValue("phone", usuario.Phone);
-                        cmd.Parameters.AddWithValue("date", usuario.Date);
+                        cmd.Parameters.AddWithValue("profile", user.Profile.Id);
+                        cmd.Parameters.AddWithValue("name", user.Name);
+                        cmd.Parameters.AddWithValue("login", user.Login);
+                        cmd.Parameters.AddWithValue("password", user.Password);
+                        cmd.Parameters.AddWithValue("created", user.Created);
 
                         con.Open();
-                        return int.Parse(cmd.ExecuteScalar().ToString());
-                        
+                        var id = await cmd
+                                       .ExecuteScalarAsync()
+                                       .ConfigureAwait(false);
+
+                        return int.Parse(id.ToString());
                     }
-
-
                 }
             }
-            catch(SqlException e)
+            catch (SqlException ex)
             {
-                throw new Exception(e.Message);
+                throw new Exception(ex.Message);
             }
-          
+        }
+
+        public async Task UpdateAsync(User user)
+        {
+            try
+            {
+                using (var con = new SqlConnection(_configuration["ConnectionString"]))
+                {
+                    var sqlCmd = @"UPDATE USER  
+                                    SET (IdProfile,
+                                            Name, 
+                                            Login, 
+                                            Password) 
+                                   VALUES (@profile, 
+                                            @name,
+                                            @login, 
+                                            @password)";
+
+                    using (SqlCommand cmd = new SqlCommand(sqlCmd, con))
+                    {
+                        cmd.CommandType = CommandType.Text;
+
+                        cmd.Parameters.AddWithValue("profile", user.Profile.Id);
+                        cmd.Parameters.AddWithValue("name", user.Name);
+                        cmd.Parameters.AddWithValue("login", user.Login);
+                        cmd.Parameters.AddWithValue("password", user.Password);
+
+                        con.Open();
+                        await cmd
+                                .ExecuteScalarAsync()
+                                .ConfigureAwait(false);
+
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

@@ -6,11 +6,12 @@ using TvPlus.Domain.Entities;
 
 namespace TvPlus.Domain.Interfaces.Repositories
 {
+
     public interface IUserRepository
     {
-
-        int Insert(User usuario);
+        Task<int> InsertAsync(User user);
+        Task UpdateAsync(User user);
+        Task<User> GetByLoginAsync(string login);
         Task<User> GetByIdAsync(int id);
-        IEnumerable<User> Get();
     }
 }
