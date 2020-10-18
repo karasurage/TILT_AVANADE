@@ -104,3 +104,46 @@ C:\Users\PICHAU\Desktop\Projeto Tilt2\TILT_AVANADE_BACK_END\src\Services\TvPlus.
 C:\Users\PICHAU\Desktop\Projeto Tilt2\TILT_AVANADE_BACK_END\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.dll
 C:\Users\PICHAU\Desktop\Projeto Tilt2\TILT_AVANADE_BACK_END\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.pdb
 C:\Users\PICHAU\Desktop\Projeto Tilt2\TILT_AVANADE_BACK_END\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.genruntimeconfig.cache
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Api.exe
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Api.deps.json
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Api.runtimeconfig.json
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Api.runtimeconfig.dev.json
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Api.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Api.pdb
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Application.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Domain.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Infrastructure.Ioc.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Application.pdb
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Infrastructure.Ioc.pdb
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Domain.pdb
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\TvPlus.Infrastructure.Repositories.pdb
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.csprojAssemblyReference.cache
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.AssemblyInfoInputs.cache
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.AssemblyInfo.cs
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.RazorTargetAssemblyInfo.cache
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.csproj.CopyComplete
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\staticwebassets\TvPlus.Api.StaticWebAssets.Manifest.cache
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\staticwebassets\TvPlus.Api.StaticWebAssets.xml
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.pdb
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.genruntimeconfig.cache
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.csproj.CoreCompileInputs.cache
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Services\TvPlus.Api\obj\Debug\netcoreapp3.1\TvPlus.Api.MvcApplicationPartsAssemblyInfo.cache

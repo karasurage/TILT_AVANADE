@@ -26,7 +26,6 @@ namespace TvPlus.Api.Controllers
         [ProducesResponseType(typeof(string), 201)]
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
-
         public IActionResult Post([FromBody] UserInput input)
         {
             try
@@ -44,8 +43,8 @@ namespace TvPlus.Api.Controllers
         [HttpGet] // api/hero
         [ProducesResponseType(typeof(string), 200)]
         [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-
         public IActionResult Get()
         {
             return Ok(_usuarioAppService.Get());
@@ -56,8 +55,8 @@ namespace TvPlus.Api.Controllers
         [Route("{id}")]
         [ProducesResponseType(typeof(string), 200)]
         [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-
         public async Task<IActionResult> Get([FromRoute] int id)
         {
             return   Ok(await _usuarioAppService.GetByIdAsync(id)

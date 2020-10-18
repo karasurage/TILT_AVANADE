@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Modules\TvPlus.Application\TvPlus.Application.csproj" />
     <ProjectReference Include="..\..\Modules\TvPlus.Infrastructure.Ioc\TvPlus.Infrastructure.Ioc.csproj" />
   </ItemGroup>
