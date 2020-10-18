@@ -33,19 +33,19 @@ namespace TvPlus.Application.AppTv
         {
             try
             {
-                var usuairo = new User(input.FirstName, input.LastName, input.Email,
+                var usuario = new User(input.FirstName, input.LastName, input.Email,
                     new Actor(input.Actor.ActorGenre, input.Actor.CPF,
                     input.Actor.HourValue), input.Phone);
 
-                if (!usuairo.IsValid())
+                if (!usuario.IsValid())
                 {
                     throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
                 }
 
-               /*var id =  _usuarioRepository.Insert(usuairo);
-                usuairo.SetId(id);
+               /*var id =  _usuarioRepository.Insert(usuario);
+                usuario.SetId(id);
 
-                return usuairo;*/
+                return usuario;*/
             }
             catch(Exception e)
             {

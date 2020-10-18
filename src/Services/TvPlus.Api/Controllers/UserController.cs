@@ -22,7 +22,7 @@ namespace TvPlus.Api.Controllers
             {
                 _usuarioAppService = usuarioAppService;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw new Exception("Erro =>" + e);
             }
@@ -34,21 +34,20 @@ namespace TvPlus.Api.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
 
-        public void /*IActionResult*/ Post([FromBody] UserInput input)
+        public void Post([FromBody] UserInput input)
         {
             try
             {
-               /* var item =*/ _usuarioAppService.Insert(input);
-               /* return Created("", item);*/
+                _usuarioAppService.Insert(input);
             }
             catch (Exception ex)
             {
-              /*  return*/ BadRequest($"Erro => {ex.Message}");
+                BadRequest($"Erro => {ex.Message}");
             }
         }
 
 
-        [HttpGet] // api/hero
+        [HttpGet] // api/tvplus
         [ProducesResponseType(typeof(string), 200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
@@ -59,7 +58,7 @@ namespace TvPlus.Api.Controllers
         }
 
 
-        [HttpGet]// api/hero/id
+        [HttpGet] // api/tvplus/id
         [Route("{id}")]
         [ProducesResponseType(typeof(string), 200)]
         [ProducesResponseType(400)]
@@ -67,7 +66,7 @@ namespace TvPlus.Api.Controllers
         [ProducesResponseType(500)]
         public async Task<IActionResult> Get([FromRoute] int id)
         {
-            return   Ok(await _usuarioAppService.GetByIdAsync(id)
+            return Ok(await _usuarioAppService.GetByIdAsync(id)
                     .ConfigureAwait(false));
         }
 
