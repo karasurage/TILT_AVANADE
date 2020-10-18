@@ -42,7 +42,6 @@ C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Appli
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csprojAssemblyReference.cache
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.AssemblyInfoInputs.cache
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.AssemblyInfo.cs
-C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csproj.CoreCompileInputs.cache
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csproj.CopyComplete
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.dll
 C:\Users\RandersonThallys\Desktop\Academia\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.pdb
