@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TvPlus.Domain.Entities
 {
-    class Producer
+    public class Producer
     {
     }
 }

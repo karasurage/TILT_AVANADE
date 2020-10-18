@@ -51,11 +51,11 @@ namespace TvPlus.Infrastrutucture.Repositories
 
                             var usuario =
                                 new User(int.Parse(retorno["Id"].ToString())
-                                , retorno["Name"].ToString(),
+                                , retorno["FirsName"].ToString(),
+                                retorno["LastName"].ToString(),
                                 retorno["Email"].ToString(),
                                 retorno["Phone"].ToString(),
-                                 retorno["CPF"].ToString(),
-                                 DateTime.Parse(retorno["Date"].ToString()));
+                                DateTime.Parse(retorno["Date"].ToString()));
 
                            usuarioList.Add(usuario);
                         }
@@ -96,11 +96,11 @@ namespace TvPlus.Infrastrutucture.Repositories
                             
                             var usuario =  
                                 new User(int.Parse(retorno["Id"].ToString())
-                                , retorno["Name"].ToString(),
+                                , retorno["FirstName"].ToString(),
+                                 retorno["LastName"].ToString(),
                                 retorno["Email"].ToString(),
                                 retorno["Phone"].ToString(),
-                                 retorno["CPF"].ToString(),
-                                 DateTime.Parse(retorno["Date"].ToString()));
+                                DateTime.Parse(retorno["Date"].ToString()));
                             
                             return usuario;
                         }
@@ -137,10 +137,9 @@ namespace TvPlus.Infrastrutucture.Repositories
 
                         cmd.CommandType = CommandType.Text;
 
-                        cmd.Parameters.AddWithValue("name", usuario.Name);
+                        cmd.Parameters.AddWithValue("name", usuario.FirstName);
                         cmd.Parameters.AddWithValue("email", usuario.Email);
                         cmd.Parameters.AddWithValue("phone", usuario.Phone);
-                        cmd.Parameters.AddWithValue("cpf", usuario.CPF);
                         cmd.Parameters.AddWithValue("date", usuario.Date);
 
                         con.Open();
