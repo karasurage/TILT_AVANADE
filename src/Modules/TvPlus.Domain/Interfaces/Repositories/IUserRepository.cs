@@ -10,6 +10,7 @@ namespace TvPlus.Domain.Interfaces.Repositories
     {
 
         void Insert(User usuario);
+        void InsertP(User usuairo);
         Task<User> GetByIdAsync(int id);
         IEnumerable<User> Get();
     }

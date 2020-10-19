@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TvPlus.Application\TvPlus.Application.csproj" />
     <ProjectReference Include="..\TvPlus.Domain\TvPlus.Domain.csproj" />
   </ItemGroup>
 

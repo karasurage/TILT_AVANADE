@@ -10,10 +10,13 @@ namespace TvPlus.Domain.Entities
         public string LastName { get; private set; }
         public string Email { get; private set; }
         public Actor Actor { get; private set; }
+        public Producer Producer { get; private set; }
         public string Phone { get; private set; }
         public DateTime Date { get; private set; }
 
-        /*  Constructor */
+        public User() { }
+
+        /*  Constructor User->Actor*/
         public User(int id, string firstname, string lastName, string email,
             Actor actor ,string phone, DateTime data) 
         {
@@ -38,6 +41,31 @@ namespace TvPlus.Domain.Entities
             Date = DateTime.Now;
         }
 
+        /*  Constructor User->Producer */
+        public User(int id, string firstname, string lastName, string email,
+            Producer producer, string phone, DateTime data)
+        {
+            SetId(id);
+            FirstName = firstname;
+            LastName = lastName;
+            Email = email;
+            Phone = phone;
+            Producer = producer;
+            Date = data;
+
+        }
+        public User(string firstname, string lastName, string email,
+            Producer producer, string phone)
+        {
+
+            FirstName = firstname;
+            LastName = lastName;
+            Email = email;
+            Producer = producer;
+            Phone = phone;
+            Date = DateTime.Now;
+        }
+
 
         /*Method Custom*/
 
@@ -45,15 +73,34 @@ namespace TvPlus.Domain.Entities
         {
             var valid = true;
 
-            if (string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName)|| string.IsNullOrEmpty(Email)
-                || string.IsNullOrEmpty(Phone) || !Actor.IsValid() )
+            
+                if (string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName) || string.IsNullOrEmpty(Email)
+               || string.IsNullOrEmpty(Phone) || !Actor.IsValid())
+                {
+                    valid = false;
+                }
+                       
+         
+            return valid;
+
+        }
+
+        public bool IsValidP()
+        {
+            var valid = true;
+
+
+            if (string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName) || string.IsNullOrEmpty(Email)
+           || string.IsNullOrEmpty(Phone) || !Producer.IsValid())
             {
                 valid = false;
             }
 
+
             return valid;
 
         }
+
 
         public void SetId(int id)
         {

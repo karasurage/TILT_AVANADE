@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.9",
           "System.Data.SqlClient": "4.8.2",
+          "TvPlus.Application": "1.0.0",
           "TvPlus.Domain": "1.0.0",
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
@@ -111,6 +112,14 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
+      "TvPlus.Application/1.0.0": {
+        "dependencies": {
+          "TvPlus.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TvPlus.Application.dll": {}
+        }
+      },
       "TvPlus.Domain/1.0.0": {
         "runtime": {
           "TvPlus.Domain.dll": {}
@@ -200,6 +209,11 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "TvPlus.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "TvPlus.Domain/1.0.0": {
       "type": "project",

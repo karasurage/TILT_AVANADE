@@ -46,3 +46,15 @@ C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Modules\TvPlus.Applicatio
 C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csproj.CopyComplete
 C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.dll
 C:\Users\sucod\Documents\workspace-vs\TILT_AVANADE\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.pdb
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Application.deps.json
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Application.dll
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Application.pdb
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Domain.dll
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\bin\Debug\netcoreapp3.1\TvPlus.Domain.pdb
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csprojAssemblyReference.cache
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.AssemblyInfoInputs.cache
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.AssemblyInfo.cs
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csproj.CoreCompileInputs.cache
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.csproj.CopyComplete
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.dll
+C:\Users\PICHAU\Desktop\Tilt3\TILT_AVANADE_BACK_END\src\Modules\TvPlus.Application\obj\Debug\netcoreapp3.1\TvPlus.Application.pdb

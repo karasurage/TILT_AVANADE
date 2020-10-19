@@ -127,39 +127,37 @@ namespace TvPlus.Infrastrutucture.Repositories
             }
 
         }
-
-        public void Insert(User usuario)
+        public void InsertP(User usuario)
         {
             try
             {
+
                 using SqlConnection con = new SqlConnection(_configuration["ConnectionString"]);
                 var query = @"BEGIN; 
-                                    INSERT INTO [user] 
-                                                (firstname, 
-                                                    lasname, 
-                                                    email, 
-                                                    cellphone, 
-                                                    datecreatedaccount) 
-                                    VALUES      (@firstName, 
-                                                    @lastName, 
-                                                    @email, 
-                                                    @cellPhone, 
-                                                    @date); 
+                                        INSERT INTO [user] 
+                                                    (FirstName, 
+                                                        LasName, 
+                                                        Email, 
+                                                        Cellphone, 
+                                                        DateCreatedAccount) 
+                                        VALUES      (@firstName, 
+                                                        @lastName, 
+                                                        @email, 
+                                                        @cellPhone, 
+                                                        @date); 
 
-                                    DECLARE @Local INT; 
+                                        DECLARE @Local2 INT; 
 
-                                    SELECT @Local = Scope_identity(); 
+                                        SELECT @Local2 = Scope_identity(); 
 
-                                    INSERT INTO [actor] 
-                                                (actinggenre, 
-                                                    cpf, 
-                                                    hourvalue, 
-                                                    fk_iduser) 
-                                    VALUES      (@actionGenere, 
-                                                    @cpf, 
-                                                    @hourValue, 
-                                                    @Local); 
-                                END;";
+                                        INSERT INTO [producer] 
+                                                    (FantasyName, 
+                                                      Cnpj,
+                                                        FK_IdUser) 
+                                        VALUES      (@fantasyName, 
+                                                        @cnpj, 
+                                                        @Local2); 
+                                    END;";
 
                 using SqlCommand cmd = new SqlCommand(query, con)
                 {
@@ -171,13 +169,73 @@ namespace TvPlus.Infrastrutucture.Repositories
                 cmd.Parameters.AddWithValue("email", usuario.Email);
                 cmd.Parameters.AddWithValue("cellPhone", usuario.Phone);
                 cmd.Parameters.AddWithValue("date", usuario.Date);
-                cmd.Parameters.AddWithValue("actionGenere", usuario.Actor.ActorGenre);
-                cmd.Parameters.AddWithValue("cpf", usuario.Actor.CPF);
-                cmd.Parameters.AddWithValue("hourValue", usuario.Actor.HourValue);
+                cmd.Parameters.AddWithValue("fantasyName", usuario.Producer.FantasyName);
+                cmd.Parameters.AddWithValue("cnpj", usuario.Producer.CNPJ);
+
 
 
                 con.Open();
                 cmd.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public void Insert(User usuario)
+        {
+            try
+            {
+                
+                    using SqlConnection con = new SqlConnection(_configuration["ConnectionString"]);
+                    var query = @"BEGIN; 
+                                        INSERT INTO [user] 
+                                                    (FirstName, 
+                                                        LasName, 
+                                                        Email, 
+                                                        Cellphone, 
+                                                        DateCreatedAccount) 
+                                        VALUES      (@firstName, 
+                                                        @lastName, 
+                                                        @email, 
+                                                        @cellPhone, 
+                                                        @date); 
+
+                                        DECLARE @Local INT; 
+
+                                        SELECT @Local = Scope_identity(); 
+
+                                        INSERT INTO [actor] 
+                                                    (ActingGenre, 
+                                                        Cpf, 
+                                                        HourValue, 
+                                                        FK_IdUser) 
+                                        VALUES      (@actionGenere, 
+                                                        @cpf, 
+                                                        @hourValue, 
+                                                        @Local); 
+                                    END;";
+
+                    using SqlCommand cmd = new SqlCommand(query, con)
+                    {
+                        CommandType = CommandType.Text
+                    };
+
+                    cmd.Parameters.AddWithValue("firstName", usuario.FirstName);
+                    cmd.Parameters.AddWithValue("lastName", usuario.LastName);
+                    cmd.Parameters.AddWithValue("email", usuario.Email);
+                    cmd.Parameters.AddWithValue("cellPhone", usuario.Phone);
+                    cmd.Parameters.AddWithValue("date", usuario.Date);
+                    cmd.Parameters.AddWithValue("actionGenere", usuario.Actor.ActorGenre);
+                    cmd.Parameters.AddWithValue("cpf", usuario.Actor.CPF);
+                    cmd.Parameters.AddWithValue("hourValue", usuario.Actor.HourValue);
+
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+               
+                
             }
             catch (SqlException e)
             {
