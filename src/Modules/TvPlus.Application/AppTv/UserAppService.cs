@@ -18,34 +18,59 @@ namespace TvPlus.Application.AppTv
             _usuarioRepository = usuarioRepository;
         }
 
+        /*Get de User*/
         public IEnumerable<User> Get()
         {
             return _usuarioRepository.Get();
         }
 
+        /*Get de User com Id*/
         public async Task<User> GetByIdAsync(int id)
         {
             return await _usuarioRepository.GetByIdAsync(id)
                         .ConfigureAwait(false); 
         }
 
+
+        /* Input de User    */
         public void Insert(UserInput input)
         {
             try
             {
-                var usuario = new User(input.FirstName, input.LastName, input.Email,
-                    new Actor(input.Actor.ActorGenre, input.Actor.CPF,
-                    input.Actor.HourValue), input.Phone);
-
-                if (!usuario.IsValid())
+                var usuario = new User();
+                if (input.Actor != null)
                 {
-                    throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
+                     usuario = new User(input.FirstName, input.LastName, input.Email,
+                        new Actor(input.Actor.ActorGenre, input.Actor.CPF,
+                        input.Actor.HourValue), input.Phone);
+
+                        if (!usuario.IsValid())
+                        {
+                            throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
+                        }
+
+                    _usuarioRepository.Insert(usuario);
+                }
+                else
+                {
+                     usuario = new User(input.FirstName, input.LastName, input.Email,
+                     new Producer(input.Producer.FantasyName, input.Producer.CNPJ), input.Phone);
+
+                        if (!usuario.IsValidP())
+                         {
+                        throw new ArgumentException("Os dados obrigatórios não foram preenchidos!");
+                        }
+
+                    _usuarioRepository.InsertP(usuario);
+
                 }
 
-               /*var id =  _usuarioRepository.Insert(usuario);
-                usuario.SetId(id);
+                
 
-                return usuario;*/
+              
+                 /*usuario.SetId(id);*/
+
+                 /*return usuario;*/
             }
             catch(Exception e)
             {

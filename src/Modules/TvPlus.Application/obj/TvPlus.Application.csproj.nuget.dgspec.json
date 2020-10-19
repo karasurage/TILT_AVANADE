@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {}
+    "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {
+    "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
         "projectName": "TvPlus.Application",
-        "projectPath": "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
-        "packagesPath": "C:\\Users\\sucod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Application\\obj\\",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\TvPlus.Application.csproj",
+        "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sucod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj": {
-                "projectPath": "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj"
+              "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj"
               }
             }
           }
@@ -56,21 +56,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj": {
+    "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj",
         "projectName": "TvPlus.Domain",
-        "projectPath": "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj",
-        "packagesPath": "C:\\Users\\sucod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sucod\\Documents\\workspace-vs\\TILT_AVANADE\\src\\Modules\\TvPlus.Domain\\obj\\",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\TvPlus.Domain.csproj",
+        "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\Tilt3\\TILT_AVANADE_BACK_END\\src\\Modules\\TvPlus.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sucod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

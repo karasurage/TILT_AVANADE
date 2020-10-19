@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TvPlus.Application.AppTv.Input;
 using TvPlus.Application.AppTv.Interfaces;
+using TvPlus.Domain.Entities;
 
 namespace TvPlus.Api.Controllers
 {
@@ -38,7 +39,9 @@ namespace TvPlus.Api.Controllers
         {
             try
             {
+            
                 _usuarioAppService.Insert(input);
+
             }
             catch (Exception ex)
             {
